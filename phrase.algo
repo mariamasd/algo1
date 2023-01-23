@@ -1,0 +1,31 @@
+Algorithm lire_une_phase
+VAR
+
+CHAR :=caractere,
+INTEGER:=i,nbre_caractere,nbre_mots,nbre_voyelle
+nbre_caractere=0
+nbre_mots=0
+nbre_voyelle=0
+BEGIN
+
+    for (i=0; caractere[i] not "." ; i++)
+    READ (caractere)
+    nbre_caractere++
+    write("le nobre de caractere est:",nbre_caractere)
+        if(caractere==" ")
+        nbre_mots++
+        write("le nobre de mots est :"nbre_mots)
+        ENDIF
+        if(caractere== "e" or "o" or "u" or "i" or "a" or "y")
+        nbre_voyelle++
+        write("le nobre de voyelles est :"nbre_voyelle)
+
+        ENDIF
+    ENDFOR
+END
+
+
+
+
+
+
